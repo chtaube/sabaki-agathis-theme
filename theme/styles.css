@@ -1,0 +1,69 @@
+
+header {
+    background: #292a2d;
+}
+
+main {
+    background-image: url('background.png');
+}
+
+/* Define the board */
+
+.shudan-goban {
+    --shudan-board-background-color: #ebb55e;   /* board color */
+    --shudan-board-foreground-color: #715728;   /* grid color */
+    --shudan-board-border-color: #c3a162;       /* board border color */
+}
+
+.shudan-goban-image {
+    background-image: none;
+}
+
+/* color of coordinates */
+.shudan-coordx span, .shudan-coordy span {
+    /* color: #65440e; */
+}
+
+
+/* Define the stones */
+
+.shudan-stone-image.shudan-sign_-1 {
+    background-image: url('white.svg');
+}
+
+.shudan-stone-image.shudan-sign_1 {
+    background-image: url('black.svg');
+}
+
+/* stone size */
+.shudan-vertex .shudan-stone {
+    top: .015em;
+    left: .015em;
+    width: calc(100% - .03em);
+    height: calc(100% - .03em);
+}
+
+/* Heat map */
+/* Hint: Mix colors here: https://www.w3schools.com/colors/colors_mixer.asp */
+.shudan-vertex .shudan-heat {transition: opacity 0s, box-shadow 0s;}
+.shudan-vertex.shudan-heat_9 .shudan-heat {background: #347b98; box-shadow: 0 0 0 .5em #347b98; opacity: .80;}
+.shudan-vertex.shudan-heat_8 .shudan-heat {background: #59a80f; box-shadow: 0 0 0 .5em #59a80f; opacity: .65;}
+.shudan-vertex.shudan-heat_7 .shudan-heat {background: #6fb50a; box-shadow: 0 0 0 .5em #6fb50a; opacity: .50;}
+.shudan-vertex.shudan-heat_6 .shudan-heat {background: #83bf05; box-shadow: 0 0 0 .5em #83bf05; opacity: .40;}
+.shudan-vertex.shudan-heat_5 .shudan-heat {background: #99cc00; box-shadow: 0 0 0 .5em #99cc00; opacity: .30;}
+.shudan-vertex.shudan-heat_4 .shudan-heat {background: none; box-shadow: none; opacity: 1;}
+.shudan-vertex.shudan-heat_3 .shudan-heat {background: none; box-shadow: none; opacity: 1;}
+.shudan-vertex.shudan-heat_2 .shudan-heat {background: none; box-shadow: none; opacity: 1;}
+.shudan-vertex.shudan-heat_1 .shudan-heat {background: none; box-shadow: none; opacity: 1;}
+.shudan-vertex .shudan-heatlabel {
+    /* color: white; */
+    font-size: .30em;
+    /* line-height: 1.26; */
+    /* text-shadow: none; */
+    opacity: .85;
+}
+.shudan-vertex.shudan-heat_4 .shudan-heatlabel { opacity: .90; }
+.shudan-vertex.shudan-heat_3 .shudan-heatlabel { opacity: .80; }
+.shudan-vertex.shudan-heat_2 .shudan-heatlabel { opacity: .70; }
+.shudan-vertex.shudan-heat_1 .shudan-heatlabel { opacity: .60; }
+

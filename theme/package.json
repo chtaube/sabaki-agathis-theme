@@ -1,0 +1,11 @@
+{
+	"name": "Agathis",
+	"version": "1.1.1",
+	"main": "styles.css",
+	"description": "A korean agathis board with yunzi stones and reduced heatmap - highly functional with a pleasant look",
+	"author": "Christian Taube (chtaube)",
+	"homepage": "https://github.com/chtaube/sabaki-agathis-theme",
+	"dependencies": {
+		"asar": "^3.2.0"
+	}
+}
